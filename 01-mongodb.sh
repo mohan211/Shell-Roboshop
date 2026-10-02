@@ -9,7 +9,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-TIMESTAMP=$date(date "+%Y-%m-%d %H:%M:%S")
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 if [$USERID -ne 0]; then
    echo -e "$TIMESTAMP [ERROR] $R Please run this script with root user previliges $N"
    exit 1
